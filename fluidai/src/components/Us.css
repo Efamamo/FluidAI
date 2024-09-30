@@ -1,0 +1,34 @@
+.us {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.us h1 {
+  font-size: 70px;
+  color: white;
+  font-weight: 400;
+}
+
+.us button {
+  width: 167px;
+  height: 52px;
+  border-radius: 52px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .us h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .us h1 {
+    font-size: 30px;
+  }
+}
