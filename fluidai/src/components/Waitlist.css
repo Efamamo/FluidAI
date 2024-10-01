@@ -21,7 +21,7 @@
 
 .waitlist input,
 .waitlist select {
-  width: 450px;
+  max-width: 450px;
 }
 
 .waitlist input,
@@ -38,13 +38,23 @@
   margin-bottom: 30px;
 }
 
-.flag {
-  width: 50px;
-  height: 50px;
-  background-color: white; /* Background color of the circle */
-  border-radius: 50%; /* Makes the shape circular */
+.waitlist option {
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 24px; /* Size of the flag */
+  margin-top: 2px;
+}
+
+.waitlist img {
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .waitlist {
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 10px;
+  }
+  .waitlist h1 {
+    font-size: 32px;
+  }
 }

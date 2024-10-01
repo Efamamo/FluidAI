@@ -12,7 +12,7 @@ export default function Waitlist() {
           <select>
             <option value="United Arab Emirates" selected>
               <span className="flag">🇦🇪 </span>
-              United Arab Emirates:
+              United Arab Emirates
             </option>
             <option value="USA">
               <span className="flag">🇺🇸</span> USA{' '}

@@ -9,3 +9,10 @@
   max-width: 800px;
   margin-left: 80px;
 }
+
+@media (max-width: 780px) {
+  .vision h1 {
+    margin: 10px 0;
+    font-size: 32px;
+  }
+}
