@@ -53,7 +53,7 @@ export default function Hero() {
         ? '615px'
         : window.innerWidth <= 768
         ? '750px'
-        : '630px'; // Adjust top value for mobile view
+        : '630px';
   }
 
   return (
@@ -61,14 +61,14 @@ export default function Hero() {
       <div className="hero_container">
         <img src={union} alt="Hero Image" />
         <div className="word">
-          <span className="letter letterF">F</span>
-          <span className="letter letterL">l</span>
-          <span className="letter letterU">u</span>
-          <span className="letter letterI">i</span>
-          <span className="letter letterD">d</span>
+          <span className="letter">F</span>
+          <span className="letter">l</span>
+          <span className="letter">u</span>
+          <span className="letter">i</span>
+          <span className="letter">d</span>
           <span className="letter space"></span>
-          <span className="letter letterA">A</span>
-          <span className="letter letterI">I</span>
+          <span className="letter">A</span>
+          <span className="letter">I</span>
         </div>
       </div>
     </div>
