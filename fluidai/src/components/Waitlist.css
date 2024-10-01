@@ -1,7 +1,17 @@
 .waitlist {
+  background: linear-gradient(
+    to left,
+    #faf4e5,
+    #f0d2a8,
+    #9c5a28,
+    #441f0e,
+    #1d0f0a,
+    #090711
+  );
+
   display: flex;
   justify-content: space-evenly;
-  margin: 100px 80px;
+  margin: 100px 0;
   align-items: center;
   color: white;
   font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -22,7 +32,7 @@
 .waitlist input,
 .waitlist select {
   width: 80%;
-  background-color: black;
+  background-color: transparent;
   border: none;
   outline: none;
   color: white;
