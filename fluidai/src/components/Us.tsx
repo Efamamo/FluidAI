@@ -11,13 +11,33 @@ import event3 from '../assets/event3.png';
 import Event from './Us/Event';
 import Service from './Us/Service';
 import Todo from './Us/Todo';
+import { useEffect, useState } from 'react';
 
 const events = [event3, event2, event1];
 export default function Us() {
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+
+    if (scrollY > 700) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div className="us_container">
       <div className="us">
-        <div>
+        <div className={`content ${isScrolled ? 'visible' : ''}`}>
           <div className="cafe-todo">
             <div className="t">
               <Todo todo="Renew Car insurance" />
@@ -45,7 +65,11 @@ export default function Us() {
           <Button />
         </div>
 
-        <div className="second-container">
+        <div
+          className={`second-container right-content ${
+            isScrolled ? 'visible' : ''
+          }`}
+        >
           <Todo todo="Renew Car insurance" />
           <div className="ml ev">
             <Event images={events} name="Kite Beach" time="10:00 - 14:00" />

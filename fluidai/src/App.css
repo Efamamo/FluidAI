@@ -1,0 +1,14 @@
+.gradiant {
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #000000,
+    #030201,
+    #844822,
+    #e79c5b,
+    #fef9f2,
+    #a6afa7,
+    #2d434b,
+    #030201
+  );
+}

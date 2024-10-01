@@ -13,9 +13,12 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Scroll />
-      <Us />
+      <div className="gradiant">
+        <Hero />
+        <Scroll />
+        <Us />
+      </div>
+
       <Features />
       <Vision />
       <OurJob />

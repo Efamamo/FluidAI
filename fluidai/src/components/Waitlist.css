@@ -29,6 +29,10 @@
   gap: 20px;
 }
 
+.waitlist .desc {
+  margin-left: 50px;
+}
+
 .waitlist input,
 .waitlist select {
   width: 80%;
@@ -60,6 +64,10 @@
     flex-direction: column;
     gap: 50px;
     margin: 50px 10px;
+  }
+
+  .waitlist .desc {
+    margin-left: 0;
   }
   .waitlist h1 {
     font-size: 32px;

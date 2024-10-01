@@ -4,7 +4,7 @@ import './Waitlist.css';
 export default function Waitlist() {
   return (
     <div className="waitlist">
-      <div>
+      <div className="desc">
         <h1>Join the Fluid AI Waitlist Today!</h1>
         <form>
           <input type="text" placeholder="Name" />
