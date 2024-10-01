@@ -1,3 +1,5 @@
+import questions from '../data/questions';
+import Question from './core/Question';
 import './OurJob.css';
 export default function OurJob() {
   return (
@@ -10,7 +12,11 @@ export default function OurJob() {
           overview of what curiosity and awe can do for you.
         </p>
       </div>
-      <div></div>
+      <div className="q">
+        {questions.map((question) => (
+          <Question question={question} />
+        ))}
+      </div>
     </div>
   );
 }

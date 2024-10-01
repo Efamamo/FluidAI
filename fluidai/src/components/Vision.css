@@ -6,6 +6,6 @@
   font-size: 42px;
   color: white;
   font-weight: 400;
-  width: 800px;
+  max-width: 800px;
   margin-left: 80px;
 }
