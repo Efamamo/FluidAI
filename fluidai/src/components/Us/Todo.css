@@ -1,0 +1,19 @@
+.todo {
+  background-color: #2626264d;
+  border-radius: 42px;
+  border-radius: 25px;
+  width: 282px;
+  height: 93px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  padding-left: 10px;
+}
+
+.todo h3,
+.todo h2 {
+  text-align: start;
+  margin: 0;
+  color: white;
+}

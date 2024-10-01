@@ -1,0 +1,15 @@
+.service {
+  background-color: #2626264d;
+  border-radius: 42px;
+  width: 161px;
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}

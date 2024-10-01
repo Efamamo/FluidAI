@@ -1,8 +1,18 @@
 .us_container {
-  height: 1800px;
+  height: 1500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    #030201,
+    #844822,
+    #e79c5b,
+    #fef9f2,
+    #a6afa7,
+    #2d434b
+  );
 }
 
 .us {
@@ -17,6 +27,53 @@
   font-size: 70px;
   color: white;
   font-weight: 400;
+}
+
+.first-event {
+  position: absolute;
+  right: 500px;
+  top: 250px;
+}
+
+.second-event {
+  position: absolute;
+  left: 5px;
+  top: 550px;
+}
+
+.first-service {
+  position: absolute;
+  right: 200px;
+  top: 500px;
+}
+
+.second-service {
+  position: absolute;
+  right: 240px;
+  top: 570px;
+}
+
+.third-service {
+  position: absolute;
+  left: 300px;
+  top: 680px;
+}
+
+.first-todo {
+  position: absolute;
+  right: 350px;
+  top: 100px;
+}
+
+.second-todo {
+  position: absolute;
+  left: 5px;
+  top: 400px;
+}
+.ticket {
+  position: relative;
+  bottom: 100px;
+  right: 350px;
 }
 
 @media (max-width: 1280px) {
