@@ -1,0 +1,8 @@
+.waitlist_button {
+  width: 167px;
+  height: 52px;
+  border-radius: 52px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}

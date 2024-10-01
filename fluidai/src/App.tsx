@@ -6,6 +6,7 @@ import OurJob from './components/OurJob';
 import Scroll from './components/Scroll';
 import Us from './components/Us';
 import Vision from './components/Vision';
+import Waitlist from './components/Waitlist';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Features />
       <Vision />
       <OurJob />
+      <Waitlist />
     </>
   );
 }
