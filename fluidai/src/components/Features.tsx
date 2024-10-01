@@ -14,7 +14,7 @@ export default function Features() {
 
       {features.map((feature, idx) => (
         <Feature
-          key={feature.title}
+          key={idx}
           title={feature.title}
           description={feature.description}
           image={feature.image}

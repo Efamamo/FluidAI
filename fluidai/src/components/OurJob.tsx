@@ -13,8 +13,8 @@ export default function OurJob() {
         </p>
       </div>
       <div className="q">
-        {questions.map((question) => (
-          <Question question={question} />
+        {questions.map((question, idx) => (
+          <Question key={idx} question={question} />
         ))}
       </div>
     </div>

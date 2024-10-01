@@ -1,7 +1,7 @@
-import feature1 from '../assets/iPhone 14 Plus.png';
-import feature2 from '../assets/iPhone 14 Plus (1).png';
-import feature3 from '../assets/iPhone 14 Plus (2).png';
-import feature4 from '../assets/iPhone 14 Plus (3).png';
+import feature1 from '/src/assets/iPhone 14 Plus.png';
+import feature2 from '/src//assets/iPhone 14 Plus (1).png';
+import feature3 from '/src/assets/iPhone 14 Plus (2).png';
+import feature4 from '/src/assets/iPhone 14 Plus (3).png';
 const features = [
   {
     title: 'Fluid AI: Simplify, Organize, and Achieve More',

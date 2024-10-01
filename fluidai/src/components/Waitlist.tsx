@@ -10,7 +10,7 @@ export default function Waitlist() {
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <select>
-            <option value="United Arab Emirates" selected>
+            <option value="United Arab Emirates" defaultChecked>
               <span className="flag">🇦🇪 </span>
               United Arab Emirates
             </option>
@@ -21,14 +21,15 @@ export default function Waitlist() {
               <span className="flag">🇵🇱 </span> Poland
             </option>
             <option value="France">
-              {' '}
-              <span className="flag">🇫🇷 </span>Franc
+              <span className="flag">🇫🇷 </span>France
             </option>
           </select>
           <Button />
         </form>
       </div>
-      <img src={phone} alt="" />
+      <div>
+        <img src={phone} alt="" />
+      </div>
     </div>
   );
 }

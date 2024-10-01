@@ -12,6 +12,7 @@
 
 .question_container .add {
   width: 50px;
-  font-size: 18px;
+  font-size: 25px;
   text-align: right;
+  cursor: pointer;
 }

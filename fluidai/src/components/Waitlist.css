@@ -21,11 +21,7 @@
 
 .waitlist input,
 .waitlist select {
-  max-width: 450px;
-}
-
-.waitlist input,
-.waitlist select {
+  width: 80%;
   background-color: black;
   border: none;
   outline: none;

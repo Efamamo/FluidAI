@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import './ImageSlider.css';
 import visions from '../../data/vision';
-import left from '../../assets/Group 1171275351.png';
-import right from '../../assets/Group 1171275350.png';
 import EachVision from './EachVision';
 
-const ImageSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const ImageSlider: React.FC = () => {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   // Function to go to the next slide
   const nextSlide = () => {
@@ -20,32 +18,38 @@ const ImageSlider = () => {
     );
   };
 
+  // Function to go to a specific slide
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <div className="slider-container">
       <img
-        src={left}
-        alt="left arrow"
-        onClick={prevSlide}
-        className="slider-button left"
+        src={visions[currentIndex].image}
+        alt={visions[currentIndex].title}
+        style={{ width: '100%', height: '900px', objectFit: 'cover' }} // Add appropriate styles
       />
 
       <div className="slider-image">
-        <img
-          src={visions[currentIndex].image}
-          alt={`Slide ${currentIndex + 1}`}
-        />
         <EachVision
+          next={nextSlide}
+          prev={prevSlide}
           title={visions[currentIndex].title}
           description={visions[currentIndex].description}
         />
       </div>
 
-      <img
-        src={right}
-        alt="right arrow"
-        onClick={nextSlide}
-        className="slider-button"
-      />
+      {/* Dot indicators */}
+      <div className="dot-indicators">
+        {visions.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${currentIndex === index ? 'active' : ''}`}
+            onClick={() => goToSlide(index)} // Click to change slide
+          />
+        ))}
+      </div>
     </div>
   );
 };
