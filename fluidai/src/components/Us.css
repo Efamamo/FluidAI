@@ -1,9 +1,7 @@
 .us_container {
   height: 1500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  overflow: hidden;
   background: linear-gradient(
     to bottom,
     #030201,
@@ -16,11 +14,12 @@
 }
 
 .us {
-  max-width: 800px;
-  margin: auto;
+  display: flex;
+  align-items: center;
   text-align: center;
   font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow: hidden;
 }
 
 .us h1 {
@@ -29,53 +28,44 @@
   font-weight: 400;
 }
 
-.first-event {
-  position: absolute;
-  right: 500px;
-  top: 250px;
+.cafe-todo {
+  display: flex;
+  align-items: end;
+  margin: 50px 20px;
+  gap: 50px;
 }
 
-.second-event {
-  position: absolute;
-  left: 5px;
-  top: 550px;
-}
-
-.first-service {
-  position: absolute;
-  right: 200px;
-  top: 500px;
-}
-
-.second-service {
-  position: absolute;
-  right: 240px;
-  top: 570px;
-}
-
-.third-service {
-  position: absolute;
-  left: 300px;
-  top: 680px;
-}
-
-.first-todo {
-  position: absolute;
-  right: 350px;
-  top: 100px;
-}
-
-.second-todo {
-  position: absolute;
-  left: 5px;
-  top: 400px;
-}
 .ticket {
   position: relative;
-  bottom: 80px;
-  right: 350px;
+  left: 150px;
 }
 
+.event-service {
+  display: flex;
+  align-items: end;
+  margin: 50px 20px;
+  gap: 30px;
+}
+
+.second-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.us .middle {
+  max-width: 600px;
+}
+
+.ml {
+  margin-left: auto;
+}
+
+.mlp {
+  margin-left: auto;
+  padding-right: 40px;
+}
 @media (max-width: 1280px) {
   .us h1 {
     font-size: 50px;
@@ -87,36 +77,137 @@
     font-size: 30px;
   }
 
+  .us .middle {
+    position: absolute;
+    width: 200px;
+    left: 240px;
+  }
+  .us .cafe-todo {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .cafe-todo .t {
+    order: 2;
+    position: relative;
+    right: 50px;
+  }
+
+  .cafe-todo .lodging_container {
+    order: 1;
+  }
+
+  .event-service {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .second-container {
+    width: 400px;
+  }
+
+  .second-container .ev {
+    position: relative;
+    left: 400px;
+  }
+
+  .second-container > div {
+    position: relative;
+    left: 100px;
+  }
+
+  .second-container .todo {
+    position: relative;
+    left: 280px;
+  }
+
+  .second-container .serv {
+    top: 160px;
+  }
+
+  .mlp,
+  .ml {
+    margin-left: 0;
+    padding-right: 0;
+  }
+
   .ticket {
-    right: 80px;
+    left: 50px;
+    width: 187px;
   }
 
-  .first-service {
-    top: 590px;
-    right: 180px;
+  .ticket img {
+    width: 100%;
   }
-  .second-service {
-    top: 650px;
-    right: 200px;
+}
+
+@media (max-width: 500px) {
+  .us .middle {
+    position: absolute;
+    width: 200px;
+    left: 100px;
+  }
+  .us .cafe-todo {
+    flex-direction: column;
+    align-items: start;
   }
 
-  .second-todo {
-    left: -100px;
-  }
-
-  .first-event {
-    display: none;
-  }
-
-  .second-event {
-    left: -100px;
-  }
-
-  .first-todo {
+  .cafe-todo .t {
+    order: 2;
+    position: relative;
     right: 150px;
   }
 
-  .third-service {
-    left: 200px;
+  .cafe-todo .lodging_container {
+    order: 1;
+  }
+
+  .event-service {
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    right: 150px;
+  }
+
+  .second-container {
+    width: 100px;
+  }
+
+  .second-container .ev {
+    position: relative;
+    left: 100px;
+  }
+
+  .second-container > div {
+    position: relative;
+    left: 0;
+  }
+
+  .second-container .todo {
+    position: relative;
+    left: 0;
+  }
+
+  .second-container .serv {
+    top: 160px;
+  }
+
+  .mlp,
+  .ml {
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .ticket {
+    left: 50px;
+    width: 187px;
+  }
+
+  .ticket img {
+    width: 100%;
+  }
+
+  .us_container {
+    height: 1000px;
   }
 }

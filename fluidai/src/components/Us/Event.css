@@ -3,7 +3,7 @@
   border-radius: 25px;
   width: 282px;
   height: 184px;
-  position: absolute;
+  position: relative;
 }
 
 .event_container .image_cont {
@@ -50,4 +50,11 @@
 .event_container .desc div {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 900px) {
+  .event_container {
+    position: relative;
+    right: 100px;
+  }
 }

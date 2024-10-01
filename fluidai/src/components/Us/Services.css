@@ -13,3 +13,14 @@
   font-size: 20px;
   font-weight: 400;
 }
+
+@media (max-width: 900px) {
+  .service {
+    width: 80px;
+    height: 30px;
+  }
+
+  .service h2 {
+    font-size: 12px;
+  }
+}

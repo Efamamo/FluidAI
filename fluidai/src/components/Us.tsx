@@ -17,43 +17,51 @@ export default function Us() {
   return (
     <div className="us_container">
       <div className="us">
-        <h1>Unlock Seamless Efficiency</h1>
-        <Button />
-        <Lodging
-          title="Restaurant"
-          location="Japanese"
-          name="Clap Dubai"
-          rating={4.4}
-          image={restourant}
-        />
-        <Reservation
-          name="Restaurant Le Bous"
-          image={reserve}
-          time="4 Oct 20:00"
-        />
-        <div className="ticket">
-          <img src={tickets} alt="ticket" />
+        <div>
+          <div className="cafe-todo">
+            <div className="t">
+              <Todo todo="Renew Car insurance" />
+            </div>
+
+            <Lodging
+              title="Restaurant"
+              location="Japanese"
+              name="Clap Dubai"
+              rating={4.4}
+              image={restourant}
+            />
+          </div>
+          <div className="event-service">
+            <Event images={events} name="Kite Beach" time="10:00 - 14:00" />
+            <Service name="Café nearby" />
+          </div>
+          <div className="ticket">
+            <img src={tickets} alt="ticket" />
+          </div>
         </div>
-        <div className="first-event">
-          <Event images={events} name="Kite Beach" time="10:00 - 14:00" />
+
+        <div className="middle">
+          <h1>Unlock Seamless Efficiency</h1>
+          <Button />
         </div>
-        <div className="second-event">
-          <Event images={events} name="Kite Beach" time="10:00 - 14:00" />
-        </div>
-        <div className="first-service">
-          <Service name="Book a flight" />
-        </div>
-        <div className="second-service">
-          <Service name="Trip Ideas" />
-        </div>
-        <div className="third-service">
-          <Service name="Café nearby" />
-        </div>
-        <div className="first-todo">
+
+        <div className="second-container">
           <Todo todo="Renew Car insurance" />
-        </div>
-        <div className="second-todo">
-          <Todo todo="Renew Car insurance" />
+          <div className="ml ev">
+            <Event images={events} name="Kite Beach" time="10:00 - 14:00" />
+          </div>
+          <div className="ml serv">
+            <Service name="Book a flight" />
+          </div>
+          <div className="mlp serv">
+            <Service name="Trip Ideas" />
+          </div>
+
+          <Reservation
+            name="Restaurant Le Bous"
+            image={reserve}
+            time="4 Oct 20:00"
+          />
         </div>
       </div>
     </div>

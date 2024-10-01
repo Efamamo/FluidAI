@@ -17,3 +17,18 @@
   margin: 0;
   color: white;
 }
+
+@media (max-width: 900px) {
+  .todo {
+    width: 160px;
+    height: 60px;
+  }
+
+  .todo h2 {
+    font-size: 15px;
+  }
+
+  .todo h3 {
+    font-size: 12px;
+  }
+}

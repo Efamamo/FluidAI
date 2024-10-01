@@ -40,7 +40,7 @@ const ImageSlider: React.FC = () => {
         />
       </div>
 
-      {/* Dot indicators */}
+      {}
       <div className="dot-indicators">
         {visions.map((_, index) => (
           <span
