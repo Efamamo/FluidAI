@@ -3,13 +3,13 @@ import mouse from '../assets/Frame 1171275577.png';
 import './Scroll.css';
 
 export default function Scroll() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(window.innerWidth > 780);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsVisible(false);
     } else {
-      setIsVisible(true);
+      setIsVisible(true && window.innerWidth > 780);
     }
   };
 
