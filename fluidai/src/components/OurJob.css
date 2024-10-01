@@ -1,0 +1,19 @@
+.job {
+  color: white;
+  margin: 100px 40px;
+  display: flex;
+}
+
+.job h1 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.job .desc {
+  max-width: 500px;
+}
+
+.job * {
+  flex: 1;
+}
