@@ -1,5 +1,4 @@
 import Button from './core/Button';
-import bg from '../assets/hero-bg.png';
 import './Us.css';
 import Lodging from './Us/Lodging';
 import restourant from '../assets/restourant.png';
@@ -15,11 +14,6 @@ import Todo from './Us/Todo';
 
 const events = [event3, event2, event1];
 export default function Us() {
-  // const containerStyle = {
-  //   backgroundImage: `url(${bg})`,
-  //   backgroundSize: 'cover',
-  //   backgroundPosition: 'center',
-  // };
   return (
     <div className="us_container">
       <div className="us">

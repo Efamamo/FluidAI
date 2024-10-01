@@ -96,3 +96,13 @@
   font-weight: 400;
   width: 100%;
 }
+
+@media (max-width: 900px) {
+  .reservation_card {
+    visibility: hidden;
+  }
+
+  .loding_card {
+    left: -100px;
+  }
+}

@@ -72,7 +72,7 @@
 }
 .ticket {
   position: relative;
-  bottom: 100px;
+  bottom: 80px;
   right: 350px;
 }
 
@@ -85,5 +85,38 @@
 @media (max-width: 900px) {
   .us h1 {
     font-size: 30px;
+  }
+
+  .ticket {
+    right: 80px;
+  }
+
+  .first-service {
+    top: 590px;
+    right: 180px;
+  }
+  .second-service {
+    top: 650px;
+    right: 200px;
+  }
+
+  .second-todo {
+    left: -100px;
+  }
+
+  .first-event {
+    display: none;
+  }
+
+  .second-event {
+    left: -100px;
+  }
+
+  .first-todo {
+    right: 150px;
+  }
+
+  .third-service {
+    left: 200px;
   }
 }
