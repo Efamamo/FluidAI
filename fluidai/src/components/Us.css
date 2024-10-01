@@ -47,6 +47,7 @@
 
 .us .middle {
   max-width: 600px;
+  margin-left: 40px;
 }
 
 .ml {
@@ -55,19 +56,19 @@
 
 .mlp {
   margin-left: auto;
-  padding-right: 40px;
+  padding-right: 35px;
 }
 
 .content {
   opacity: 0;
   transform: translateX(-100px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .right-content {
   opacity: 0;
   transform: translateX(100px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .content.visible,
@@ -156,6 +157,7 @@
     position: absolute;
     width: 200px;
     left: 100px;
+    margin-left: 0;
   }
   .us .cafe-todo {
     flex-direction: column;

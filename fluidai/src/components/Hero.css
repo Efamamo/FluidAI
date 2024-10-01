@@ -7,7 +7,13 @@
 .hero_container {
   display: flex;
   align-items: center;
-  gap: 20px;
+}
+
+.sticky-text {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30%; /* Adjust this based on how long you want the text to stay in place */
+  transition: transform 0.5s ease;
 }
 
 .hero_container .word {

@@ -2,3 +2,7 @@ body {
   background-color: black;
   margin: 0;
 }
+
+.scroll-up {
+  transform: translateY(-100px); /* Adjust the scroll effect */
+}
