@@ -30,12 +30,12 @@ export default function Features() {
 
     const changeImage = (index: number) => {
       if (index !== currentImageIndex) {
-        setPreviousImageIndex(currentImageIndex); // Store the current index before changing
-        setFade(false); // Start fade-out on the current image
+        setPreviousImageIndex(currentImageIndex);
+        setFade(false);
         setTimeout(() => {
-          setCurrentImageIndex(index); // Change to the new image
-          setFade(true); // Fade in the new image
-        }, 400); // Delay for fade-out to complete
+          setCurrentImageIndex(index);
+          setFade(true);
+        }, 400);
       }
     };
 
@@ -59,18 +59,17 @@ export default function Features() {
 
         {/* Previous Image */}
         <img
-          className={`body ${!fade ? 'active' : ''}`} // Fade out the previous image
+          className={`body ${!fade ? 'active' : ''}`}
           src={features[previousImageIndex].im}
           alt=""
-          style={{ zIndex: fade ? 0 : 1 }} // Hide behind new image during fade-in
+          style={{ zIndex: fade ? 0 : 1 }}
         />
 
-        {/* Current Image */}
         <img
-          className={`body ${fade ? 'active' : ''}`} // Fade in the current image
+          className={`body ${fade ? 'active' : ''}`}
           src={features[currentImageIndex].im}
           alt=""
-          style={{ zIndex: fade ? 1 : 0 }} // Ensure the new image fades in on top
+          style={{ zIndex: fade ? 1 : 0 }}
         />
       </div>
 

@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'SF';
+  src: url('../fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+}
+
 body {
   background-color: black;
   margin: 0;
+  font-family: 'SF', sans-serif;
 }
 
 .scroll-up {

@@ -11,7 +11,7 @@
 }
 
 .slide.active .bg {
-  width: 2000px; /* Fills the entire slide container */
+  width: 2000px;
 }
 
 /* Slide */
@@ -25,7 +25,7 @@
 .active {
   opacity: 1;
   position: relative;
-  z-index: 1; /* Ensures active slide is always on top */
+  z-index: 1;
 }
 
 /* Non-active slides */
@@ -33,12 +33,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-100%); /* Move non-active slides to the left */
+  transform: translateX(-100%);
 }
 
 .dot-indicators {
   position: absolute;
-  bottom: 120px;
+  bottom: 390px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -56,5 +56,17 @@
 }
 
 .dot.active {
-  opacity: 1; /* Active dot opacity */
+  opacity: 1;
+}
+
+@media (max-width: 780px) {
+  .dot-indicators {
+    left: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dot-indicators {
+    left: 50%;
+  }
 }
