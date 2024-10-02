@@ -47,7 +47,7 @@
 
 .us .middle {
   max-width: 600px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .ml {
@@ -79,19 +79,14 @@
 
 @media (max-width: 1280px) {
   .us h1 {
-    font-size: 50px;
+    font-size: 56px;
   }
 }
 
-@media (max-width: 900px) {
-  .us h1 {
-    font-size: 30px;
-  }
-
+@media (max-width: 780px) {
   .us .middle {
     position: absolute;
-    width: 200px;
-    left: 240px;
+    left: 50px;
   }
   .us .cafe-todo {
     flex-direction: column;
@@ -133,7 +128,8 @@
   }
 
   .second-container .serv {
-    top: 160px;
+    top: 190px;
+    left: 150px;
   }
 
   .mlp,
@@ -152,7 +148,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .us .middle {
     position: absolute;
     width: 200px;
@@ -167,7 +163,7 @@
   .cafe-todo .t {
     order: 2;
     position: relative;
-    right: 150px;
+    right: 120px;
   }
 
   .cafe-todo .lodging_container {
@@ -201,7 +197,7 @@
   }
 
   .second-container .serv {
-    top: 160px;
+    right: 100px;
   }
 
   .mlp,

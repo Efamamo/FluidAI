@@ -30,6 +30,7 @@ export default function Feature({
           {number}/{total}
         </div>
       </div>
+
       {number % 2 !== 0 && (
         <>
           <img src={image} alt="feature image" />

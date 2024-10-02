@@ -11,7 +11,7 @@ export default function Hero() {
 
     const scrollY = window.scrollY;
 
-    if (window.innerWidth <= 480) {
+    if (window.innerWidth <= 780) {
       if (scrollY < 480) {
         setSticky(true);
       } else {
@@ -34,7 +34,12 @@ export default function Hero() {
     };
   }, []);
 
-  const scaleFactor = Math.max(0.3, 1 - scrollY / 500);
+  const scaleFactor =
+    window.innerWidth < 480
+      ? Math.max(0.6, 1 - scrollY / 500)
+      : window.innerWidth <= 780
+      ? Math.max(0.4, 1 - scrollY / 500)
+      : Math.max(0.3, 1 - scrollY / 500);
 
   const st: any = {
     transform: `scale(${scaleFactor})`,
@@ -50,9 +55,9 @@ export default function Hero() {
     st['position'] = 'relative';
     st['top'] =
       window.innerWidth <= 480
-        ? '615px'
+        ? '660px'
         : window.innerWidth <= 768
-        ? '750px'
+        ? '700px'
         : '630px';
   }
 
