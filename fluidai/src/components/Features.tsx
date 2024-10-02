@@ -35,7 +35,7 @@ export default function Features() {
         setTimeout(() => {
           setCurrentImageIndex(index);
           setFade(true);
-        }, 400);
+        }, 200);
       }
     };
 

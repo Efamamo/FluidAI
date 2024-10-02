@@ -5,6 +5,8 @@ import './ImageSlider.css';
 
 export default function ImageSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
@@ -22,8 +24,34 @@ export default function ImageSlider() {
     setCurrentSlide(index);
   };
 
+  // Handle touch events
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 75) {
+      // Swiped left (next slide)
+      nextSlide();
+    }
+
+    if (touchStart - touchEnd < -75) {
+      // Swiped right (previous slide)
+      prevSlide();
+    }
+  };
+
   return (
-    <div className="slider">
+    <div
+      className="slider"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <div className="slides">
         {visions.map((vision, index) => (
           <div
