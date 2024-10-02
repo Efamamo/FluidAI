@@ -1,5 +1,5 @@
 import Button from './core/Button';
-import './Us.css';
+import '../styles/Us.css';
 import Lodging from './Us/Lodging';
 import restourant from '../assets/restourant.png';
 import Reservation from './Us/Reservation';

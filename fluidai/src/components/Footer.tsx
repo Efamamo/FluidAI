@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import union from '../assets/Union.png';
-import './Footer.css';
+import '../styles/Footer.css';
 export default function Footer() {
   return (
     <footer>

@@ -1,5 +1,7 @@
 import left from '../../assets/Group 1171275351.png';
 import right from '../../assets/Group 1171275350.png';
+import '../../styles/EachBox.css';
+
 interface Props {
   title: string;
   description: string;
@@ -10,7 +12,6 @@ interface Props {
   currentSlide: number;
   goToSlide: (index: number) => void;
 }
-import './EachBox.css';
 export default function EachVision({
   title,
   description,

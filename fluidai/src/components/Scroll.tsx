@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import mouse from '../assets/Frame 1171275577.png';
-import './Scroll.css';
+import '../styles/Scroll.css';
 
 export default function Scroll() {
   const [isVisible, setIsVisible] = useState(window.innerWidth > 780);

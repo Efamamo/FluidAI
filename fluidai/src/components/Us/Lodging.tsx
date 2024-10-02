@@ -1,4 +1,4 @@
-import './Loding.css';
+import '../../styles/Loding.css';
 import menu from '../../assets/Vector.png';
 interface Props {
   title: string;

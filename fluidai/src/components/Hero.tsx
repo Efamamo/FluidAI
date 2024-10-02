@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import union from '../assets/Union.png';
-import './Hero.css';
+import '../styles/Hero.css';
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);

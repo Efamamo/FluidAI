@@ -1,5 +1,5 @@
 import timeIcon from '../../assets/Icons.png';
-import './Event.css';
+import '../../styles/Event.css';
 interface Props {
   name: string;
   time: string;

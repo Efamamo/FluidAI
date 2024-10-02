@@ -1,6 +1,6 @@
 import questions from '../data/questions';
 import Question from './core/Question';
-import './OurJob.css';
+import '../styles/OurJob.css';
 export default function OurJob() {
   return (
     <div className="job">

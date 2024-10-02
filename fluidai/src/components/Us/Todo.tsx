@@ -1,4 +1,4 @@
-import './Todo.css';
+import '../../styles/Todo.css';
 export default function Todo({ todo }: { todo: string }) {
   return (
     <div className="todo">

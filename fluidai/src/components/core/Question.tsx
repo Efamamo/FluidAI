@@ -1,4 +1,4 @@
-import './Qustion.css';
+import '../../styles/Qustion.css';
 export default function Question({ question }: { question: string }) {
   return (
     <>

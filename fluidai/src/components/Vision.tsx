@@ -1,5 +1,5 @@
 import ImageSlider from './core/ImageSlider';
-import './Vision.css';
+import '../styles/Vision.css';
 export default function Vision() {
   return (
     <div className="vision">

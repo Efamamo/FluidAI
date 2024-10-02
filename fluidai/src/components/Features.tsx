@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import features from '../data/features';
 import Feature from './Feature';
 import iphone from '../assets/Bezel.png';
-import './Features.css';
+import '../styles/Features.css';
 
 export default function Features() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

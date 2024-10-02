@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import visions from '../../data/vision';
 import EachVision from './EachVision';
-import './ImageSlider.css';
+import '../../styles/ImageSlider.css';
 
 export default function ImageSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -24,7 +24,6 @@ export default function ImageSlider() {
     setCurrentSlide(index);
   };
 
-  // Handle touch events
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchStart(e.targetTouches[0].clientX);
   };
@@ -35,12 +34,10 @@ export default function ImageSlider() {
 
   const handleTouchEnd = () => {
     if (touchStart - touchEnd > 75) {
-      // Swiped left (next slide)
       nextSlide();
     }
 
     if (touchStart - touchEnd < -75) {
-      // Swiped right (previous slide)
       prevSlide();
     }
   };

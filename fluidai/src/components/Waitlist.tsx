@@ -1,6 +1,6 @@
 import phone from '../assets/Mask group.png';
 import Button from './core/Button';
-import './Waitlist.css';
+import '../styles/Waitlist.css';
 export default function Waitlist() {
   return (
     <div className="waitlist">
