@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="letter ">u</span>
               <span className="letter ">i</span>
               <span className="letter ">d</span>
-              <span className="letter "></span>
+              <span className="letter space"></span>
               <span className="letter ">A</span>
               <span className="letter ">I</span>
             </div>

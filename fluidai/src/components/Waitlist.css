@@ -44,7 +44,12 @@
 
 .waitlist select {
   margin-bottom: 30px;
-  background-color: rgb(31, 30, 30);
+  background-color: transparent;
+}
+
+.waitlist select option {
+  background-color: #1d0f0a;
+  padding: 3px 0;
 }
 
 .waitlist option {

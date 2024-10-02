@@ -57,7 +57,6 @@ export default function Features() {
       <div className="sticky-ip">
         <img className="bezel" src={iphone} alt="iPhone" />
 
-        {/* Previous Image */}
         <img
           className={`body ${!fade ? 'active' : ''}`}
           src={features[previousImageIndex].im}

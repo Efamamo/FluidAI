@@ -12,7 +12,7 @@ footer {
 .logo_container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .logo_container .word {
@@ -21,8 +21,8 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.space {
-  width: 20px;
+.logo_container .word .space {
+  width: 5px;
 }
 
 .logo_container img {

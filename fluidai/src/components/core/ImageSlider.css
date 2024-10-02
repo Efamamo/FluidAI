@@ -38,8 +38,8 @@
 
 .dot-indicators {
   position: absolute;
-  bottom: 390px;
-  left: 50%;
+  bottom: 170px;
+  left: 55%;
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
@@ -61,6 +61,7 @@
 
 @media (max-width: 780px) {
   .dot-indicators {
+    bottom: 490px;
     left: 60%;
   }
 }
