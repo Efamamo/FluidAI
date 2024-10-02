@@ -1,22 +1,39 @@
-/* Container for the entire slider */
-.slider-container {
-  width: 100%;
-  position: relative;
+/* Main slider container */
+.slider {
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
+}
+
+.slides {
+  display: flex;
   transition: transform 0.8s ease-in-out;
 }
 
-.slider-container > img {
-  width: 2035px;
+.slide.active .bg {
+  width: 2000px; /* Fills the entire slide container */
 }
 
-.slider-image {
-  width: 100%;
+/* Slide */
+.slide {
+  min-width: 100%;
+  opacity: 0;
+  transition: opacity 2s ease;
 }
-.slider-image > img {
-  height: 100%;
-  object-fit: cover;
+
+/* Active slide */
+.active {
+  opacity: 1;
+  position: relative;
+  z-index: 1; /* Ensures active slide is always on top */
+}
+
+/* Non-active slides */
+.slide:not(.active) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%); /* Move non-active slides to the left */
 }
 
 .dot-indicators {
